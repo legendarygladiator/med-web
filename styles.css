@@ -1,0 +1,584 @@
+:root{
+  --brand-blue: #0c2340;
+  --brand-blue-dark: #081629;
+  --brand-blue-light: #143865;
+  --brand-gold: #ae9142;
+  --brand-gold-dark: #8c7535;
+  --link-blue: #0c2340;
+  --font-default: "Libre Franklin", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  --font-heading: "Times New Roman", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  --font-heading-article: "Sumana", Georgia, "Times New Roman", Times, serif;
+  --gray: #555;
+  --gray-dark: #333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-default);
+}
+
+/* HEADER   */
+header{
+  height: 210px;
+  background: var(--brand-blue);
+}
+
+.logo{
+  display: inline-block;
+}
+.logo-img{
+  height:90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.brand-name{
+  width: 10rem;
+  /* height: 10vh; */
+  font-size: 50px;
+  vertical-align: super;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bolder;
+  display: inline-block;
+  font-family: var(--font-heading);
+}
+
+.services-header{
+  color: gold;
+  display: inline-block;
+  float: right;
+  margin: 2vw 3vw 0 0;
+  font-size: 1.3vw;
+}
+.services-header a{
+  text-decoration:none;
+  color: gold;
+}
+.fa-hospital, .fa-user-md, .fa-medkit, .fa-heartbeat{
+  margin: 0 1vw 0 1vw;
+}
+
+.spacer{
+  height: 30px;
+}
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  z-index: 1;
+  width: 380px;
+  margin-right: 50px;
+  float: right;
+  width: 510px;
+}
+.topnav a, div .dropdown {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav .nav-menus{
+  font-style: var(--font-default);
+}
+
+.dropbtn {
+  border: none;
+  background: white;
+}
+.dropdown {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  align-items: center;
+  background-color: white;
+  margin-right: 15px;
+  z-index: 2;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+
+/* HEADER ENDS */
+
+/* MAIN */
+.cards{
+  background-image: url("images/main-top-bg.jpg");
+  height: 1200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  padding-top: 80px;
+  /* filter: blur(10px);
+  filter: opacity(20%); */
+}
+.card{
+  width: 80%;
+  background: white;
+  margin: auto;
+  z-index: 1;
+  height: 380px;
+  border-radius: 5%;
+  box-shadow: 2px 4px 12px black;
+  overflow: hidden;
+}
+.card-heading{
+  width: 250px;
+  margin-top: 15px;
+  margin-left: 20px;
+  display: block;
+  float:left;
+}
+.card-content{
+  width: 40%;
+  display: block;
+  float: left;
+  padding: 20px;
+  font-size: 20px;
+}
+.card .card-img{
+  margin-left: 5vw;
+  width: 40vw;
+  height: 300px;
+  border-radius: 5%;
+}
+
+.testimonials{
+  margin-top: 170px;
+}
+.testimonial-img-1{
+  height: 30vw;
+}
+.testimonial-content-1{
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.we-help{
+  font-size: 15vmax;
+  vertical-align: top;
+  margin-left: 30px;
+  font-family: var(--font-heading-article);
+}
+.testimonial-img-2{
+  float: right;
+  height: 30vw;
+}
+.testimonial-content-2{
+  /* width: 150px; */
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.testimonial-content-div-1, .testimonial-content-div-2{
+  color: gray;
+}
+
+.services{
+  margin-top: 47vw;
+  background-color: var(--brand-blue);
+  font-family: var(--font-heading-article);
+}
+.services .service-1-container img, .services .service-2-container img, .services .service-3-container img{
+  height: 20vw;
+  width: 25vw;
+}
+.services .service-2-container img{
+  float: right;
+}
+.services .service-1-discription, .services .service-3-discription{
+  color: white;
+  float: right;
+  vertical-align: top;
+  margin-right: 10vw;
+  font-size: 6vmax;
+}
+.services .service-2-discription{
+  color: white;
+  float: left;
+  vertical-align: top;
+  margin-left: 10vw;
+  font-size: 6vmax;
+}
+.services .service-1-container button, .services .service-3-container button{
+  cursor: pointer;
+  background: gold;
+  height: 4vw;
+  width: 11vw;
+  float: right;
+  border: none;
+  margin-right: 3vw;
+  font-size: 2vmax;
+}
+.services .service-2-container button{
+  cursor: pointer;
+  background: gold;
+  height: 4vw;
+  width: 11vw;
+  float: left;
+  border: none;
+  margin-left: 3vw;
+  font-size: 2vmax;
+}
+.services button:hover{
+  background: var(--brand-gold-dark);
+  box-shadow: 2px 4px 12px black;
+}
+.services .service-1-container i{
+  margin-left: 5px;
+}
+.services .service-3-container i{
+  margin-right: 10px;
+}
+.service-3-container{
+  margin-top: 30px;
+}
+.service-2-container{
+  height: 20vw;
+}
+
+.news{
+  margin-top: 100px;
+}
+.news .news-section-heading{
+  font-size: 5vw;
+  margin-left: 1vw;
+}
+.news-card{
+  position:relative;
+  height:20vw;
+  display: inline-block;
+  width: 50%;
+  margin-top: 5vw;
+  overflow: hidden;
+  cursor: pointer;
+}
+.news-card-1{
+  background:url(images/news-img-1.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news-card-2{
+  background:url(images/news-img-2.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news-card-3{
+  background:url(images/news-img-3.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news-card-4{
+  background:url(images/news-img-4.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news-card-content{
+  background-color: rgba(128,128,128,0.6);
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+.news-card-content p{
+  font-size: 1.5vw;
+}
+.news-card-content h1{
+  font-size: 2vw;
+}
+.news-card:hover{
+  box-shadow: 2px 4px 12px black;
+}
+.even-news-card{
+  float: right;
+  width: 20%;
+  align-items: center;
+  margin-right: 20vw;
+}
+.odd-news-card{
+  width: 20%;
+  margin-left: 20vw;
+  align-items: center;
+}
+
+.inspiration{
+  height: 30vw;
+  background: var(--brand-blue);
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+.quote-image-container{
+  width: 80%;
+  margin: auto;
+}
+.inspiration div .quote{
+  width: 60%;
+  font-size: 3vw;
+  float: left;
+  color: white;
+}
+.inspiration div .dude-img{
+  width: 25%;
+  height: 25vw;
+  float: right;
+}
+.double-quotes{
+  font-size: 10vw;
+  height: 80px;
+}
+/* MAIN ENDS */
+
+/* FOOTER */
+footer{
+  /* margin-top:; */
+  /* height: 100px; */
+}
+.logo-footer{
+  display: inline-block;
+  margin-left: 1.8vw;
+  margin-bottom: .8vw;
+}
+.brand-name-footer{
+  font-size: 2vw;
+  color: var(--gray-dark);
+  font-weight: lighter;
+  vertical-align: super;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.logo-img-footer{
+  height: 5vw;
+  display: inline-block;
+  width: 5vw;
+}
+
+.address{
+  float: right;
+  display: block;
+  color: gray;
+  font-weight: lighter;
+  font-size: 1.5vw;
+  margin-right: 2.5vw;
+}
+.brand-name-address, .fa-copyright{
+  color: var(--gray-dark);
+}
+
+.social-media{
+  float: right;
+  font-weight: lighter;
+  padding-top: 5px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  font-size: 1.5vw;
+  justify-content:flex-end;
+  background: gray;
+  color: var(--gray-dark);
+}
+.social-icons{
+  margin: 0 15px 5px 5px;
+  cursor: pointer;
+}
+/* FOOTER ENDS */
+
+/* RESPONSIBLE AREA */
+@media (max-width:760px) {
+  /* HEADER */
+  .logo{
+    display:block;
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .logo .logo-img{
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+  }
+  .logo .brand-name{
+    font-size: 35px;
+  }
+  .spacer{
+    width: 10px;
+  }
+  .services-header{
+    display: none;
+  }
+
+  .topnav {
+    margin-top: 20px;
+    margin-right: 0px;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+  }
+  /* HEADER ENDS */
+
+  /* MAIN */
+  .cards{
+    height: 1100px;
+  }
+  .card{
+    height: 45vw;
+  }
+  .card-heading{
+    width: 250px;
+    font-size: 4vw;
+  }
+  .card-content{
+    padding: 10px;
+    font-size: 1.8vw;
+  }
+  .card .card-img{
+    margin-left: 5vw;
+    width: 35vw;
+    height: 30vw;
+  }
+
+  .testimonials{
+    margin-top: 170px;
+  }
+  .testimonial-content-1{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 2vw;
+  }
+  .we-help{
+    font-size: 13vw;
+  }
+  .testimonial-content-2{
+    margin-right: 30px;
+    margin-bottom: 10px;
+    font-size: 2vw;
+  }
+
+  .services .service-1-discription, .services .service-3-discription{
+    font-size: 6vw;
+    margin-right: 6vw;
+  }
+  .services .service-2-discription{
+    margin-left: 6vw;
+    font-size: 6vw;
+  }
+  .services .service-1-container button, .services .service-2-container button .services .service-3-container button{
+    font-size: 1.5vw;
+  }
+  .news .news-section-heading{
+    font-size: 4vw;
+  }
+
+  .inspiration{
+    height: 28vw;
+  }
+  /* MAIN ENDS */
+
+  /* FOOTER */
+  .address{
+    font-size: 1.9vw;
+    margin-right: 3vw;
+  }
+  .social-media{
+    font-size: 2.5vw;
+  }
+  /* FOOTER ENDS */
+
+}
+
+@media (max-width:600px){
+  /* HEADER   */
+  header{
+    height: 190px;
+  }
+
+  .logo .brand-name{
+    font-size: 25px;
+  }
+
+  .spacer{
+    height: 20px;
+  }
+
+  .topnav {
+    margin-top: 23px;
+    height: 60px;
+  }
+  .topnav a, div .dropdown {
+    font-size: 10px;
+  }
+  /* HEADER ENDS */
+
+  /* MAIN */
+  .cards{
+    height: 750px;
+    padding-top: 40px;
+  }
+  .card-heading{
+    font-size: 3.5vw;
+  }
+  .card-content{
+    padding: 5px;
+    font-size: 1.85vw;
+  }
+
+  .testimonials{
+    margin-top: 40vw;
+  }
+  .testimonial-content-1{
+    margin-top: 8px;
+    margin-left: 15px;
+  }
+  .testimonial-content-2{
+    margin-bottom: 8px;
+    margin-right: 15px;
+  }
+
+  .services .service-1-discription, .services .service-3-discription{
+    margin-right: 8vw;
+    font-size: 5vw;
+  }
+  .services .service-2-discription{
+    font-size: 5vw;
+  }
+  .services .service-1-container button, .services .service-3-container button{
+    font-size: 2vw;
+  }
+  .services .service-2-container button{
+    font-size: 2vw;
+  }
+
+  .news{
+    margin-top: 15vw;
+  }
+  .news .news-section-heading{
+    margin-left: 5vw;
+  }
+
+  .inspiration{
+    margin-top: 18vw;
+    margin-bottom: 5vw;
+  }
+  .double-quotes{
+    font-size: 7vw;
+    height: 50px;
+  }
+  /* MAIN ENDS */
+}
